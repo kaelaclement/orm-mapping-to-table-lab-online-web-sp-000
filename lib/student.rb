@@ -15,7 +15,7 @@ class Student
     CREATE TABLE IF NOT EXISTS students(
       id INTEGER PRIMARY KEY,
       name TEXT,
-      grade INTEGER
+      grade TEXT
     );
     SQL
     DB[:conn].execute(sql)
@@ -26,5 +26,9 @@ class Student
     DROP TABLE IF EXISTS students;
     SQL
     DB[:conn].execute(sql)
+  end
+
+  def save
+
   end
 end
